@@ -16,10 +16,10 @@ function epsilon = estimateEpsilon(vectors, kValues, nvpair)
 % PARAMETERS
 % ----------
 % vectors -- Data for which epsilon is to be estimated. m x n matrix
-%          where rows are observations and columns are variables.
+%            where rows are observations and columns are variables.
 % kValues -- Vector of scalar values for k to be tested.
 % Name-Value Pairs (nvpair)
-%   ;distanceMetric' -- Distance metric for determing kNN. Options
+%   'distanceMetric' -- Distance metric for determing kNN. Options
 %                       correspond to the 'Distance' Name-Value Pair
 %                       Arguments for knnsearch.m. Default is
 %                       'euclidean'.
