@@ -103,8 +103,8 @@ for k = kValues
     % Retain only k nearest neighbors.
     kNN = sortedNeighbors(:, 1:k);
 
-    % Place all columns of kNN matrix into a single column vector (will
-    % contain nObs*k points) and sort.
+    % Unwind all columns of kNN matrix into a single column vector (will
+    % contain nObs*k elements) and sort.
     sortedDists = sort(kNN(:), 'ascend');
     pointIdx = (1:nObs*k)';
 
